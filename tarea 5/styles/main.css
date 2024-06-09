@@ -1,0 +1,78 @@
+.theme {
+  --bg-primary: white;
+  --bg-primary-dark: #ccc;
+  --bg-secondary: #2b6072;
+  --fg-primary: #444139;
+  --fg-primary-light: #d4d2d0;
+  --fg-primary-dark: #2a2a23;
+}
+
+html {
+  scroll-padding-top: 101px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .px-md-10 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+.mx-10 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.lateral-slider {
+  position: absolute;
+}
+
+.nav {
+  --bs-nav-pills-link-active-bg: var(--fg-primary);
+  --bs-nav-link-hover-color: var(--fg-primary-dark);
+  --bs-nav-link-color: var(--fg-primary);
+}
+
+.nav-pills .nav-item :hover {
+  background-color: var(--fg-primary-light);
+}
+
+.bi {
+  padding: 2%;
+  fill: var(--fg-primary);
+}
+  
+.bi:hover {
+  padding: 0%;
+}
+
+.list-group {
+  --bs-list-group-active-bg: var(--fg-primary);
+  --bs-list-group-active-border-color: var(--fg-primary-light);
+  border-radius: 0px;
+}
+
+#habilidades div svg {
+  width: 150px;
+  height: 150px;
+}
+
+div {
+  color: var(--fg-primary);
+}
+
+hr {
+  color: var(--fg-primary);
+  width: 100%;
+  border-width: .1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: scale-down;
+}
