@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: #eee;
+        font-family: Arial, Helvetica;
+      }
+
+      body {
+        margin: 10% 20% 0 20%;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        padding: 0 20px 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1C3950;
+      }
+
+      #header_icon {
+        width: 150px;
+        height: 100px;
+      }
+
+      #content {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      #content_menu {
+        text-align: center;
+        font-family: "Enriqueta", arial, sans-serif;
+        border-spacing: 0;
+        border: 1px solid #1C3950;
+      }
+
+      #content_menu td {
+        padding: 3px 10px;
+      }
+
+      #content_menu tr:nth-child(1) {
+        background-color: #c5e0f7;
+      }
+      
+      #content_menu tr:nth-child(2) {
+        background-color: white;
+      }
+
+      #content_text {
+        flex-grow: 1;
+      }
+
+      footer {
+        font-size: x-small;
+        font-family: "Muli", sans-serif;
+        float: right;
+      }
+    </style>
+
+    <title>Gloria</title>
+  </head>
+  <body>
+    <header>
+      <img src="./header_icon.png" id="header_icon">
+      <h1>ticktock</h1>
+    </header>
+    <span id="content">
+      <table id="content_menu">
+        <tr><td><a href="./comida.html">¿Comida?</a></td></tr>
+        <tr><td><a href="./nosotros.html">Nosotros</a></td></tr>
+        </table>
+      <div id="content_text">
+        Si estás viendo este post, lo más probable es que como yo <mark>comas comida</mark>, a menos que seas una planta y funciones por fotosíntesis.
+        Los seres humanos a diferencia de los animales, <del>los cuales comen hasta su propio vómito</del>, usalmente buscamos exclusivamente meternos cosas al hocico 
+        que sepan bonito. <strong>Pero desgraciadamente</strong> cada luna llena, un pequeño engrendro está dispuesto a meterse cualquier cochinada dentro del hocico y 
+        luego llamarla <i>comida</i>. <br>
+        Es por eso que en este post recapitularemos los más inquietantes atrocidades :D 
+      </div>
+    </span>
+    <footer>
+      <h4>&copy <i>phobcom</i> Derechos reservados 2024-2121 </h4>
+    </footer>
+  </body>
+</html>

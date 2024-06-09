@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+  <div class="container p-3 text-center">
+    <p class="display-5 col fw-normal">
+      LABORATORIO
+      JAVASCRIPT
+    </p>
+    <div class="toast-container position-absolute start-50">
+      <div id="error-toast" class="toast" role="alert">
+        <div class="d-flex justify-content-between toast-body">
+          <strong id="toast-text" class="text-danger">Hello!</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+      </div>
+    </div>
+    <div class="d-sm-flex column-gap-2 justify-content-center">
+      <form class="col-sm-6 border p-2 d-flex flex-column row-gap-2" action="#" onsubmit="return process_data(this)">
+        <div class="form-floating">
+          <input class="form-control" type="text" placeholder="Nombres" required> 
+          <label>Nombres</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" type="text" placeholder="Primer apellido" required>
+          <label>Primer apellido</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" type="text" placeholder="Segundo apellido" required>
+          <label>Segundo apellido</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" type="tel" placeholder="DNI" maxlength="8" required>
+          <label>DNI</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" type="date" min="1990-01-01" required>
+          <label>Fecha de Nacimiento</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Procesar</button>
+      </form>
+      
+      <div id="response-div" class="col-sm-6 col-offset-2 d-flex flex-column align-self-center row-gap-3 p-5 border border-primary visually-hidden">
+        <div class="input-group">
+          <span class="input-group-text">Nombre Completo:</span>
+          <label class="form-control"></label>
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Último Dígito de DNI</span>
+          <label class="form-control"></label>
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Edad</span>
+          <label class="form-control"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
